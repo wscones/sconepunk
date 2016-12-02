@@ -20,7 +20,7 @@ class TimedScene extends Scene
 	
 	public override function update()
 	{
-		Time.time++;
+		Time.time += HXP.elapsed;
 		
 		if (Time.time >= 1)
 		{
