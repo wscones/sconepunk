@@ -1,9 +1,9 @@
-package math.sconelib;
+package sconelib.math;
 
 import com.haxepunk.HXP;
 import openfl.geom.Point;
 
-import utils.sconelib.Structures;
+import sconelib.utils.Structures;
 
 class SconeMath
 {

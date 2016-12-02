@@ -1,4 +1,4 @@
-package utils.sconelib;
+package sconelib.utils;
 import com.haxepunk.utils.Input;
 
 class JoystickWrapper 
