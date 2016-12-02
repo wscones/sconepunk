@@ -5,7 +5,7 @@ import openfl.geom.Point;
 
 import utils.sconelib.Structures;
 
-class HelperFunctions
+class SconeMath
 {
 	/**
 	 * Check if one float is approximately equal to another, by the desired margin.
@@ -33,11 +33,25 @@ class HelperFunctions
 		return (point1_x > point2_x - margin) && (point1_x < point2_x + margin) && (point1_y > point2_y - margin) && (point1_y < point2_y + margin);
 	}
 	
+	/**
+	 * A very simple collision check for the x axis that doesn't pass around entities at all, just checks hitboxes.
+	 * @param	entity1_x		The first entity's x value.
+	 * @param	entity2_left	The leftmost position of the second entity's hitbox.
+	 * @param	entity2_right	The rightmost position of the second entity's hitbox.
+	 * @return	True if they're colliding on the x axis, false if they're not.
+	*/
 	static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool
 	{
 		return (entity1_x > entity2_left) && (entity1_x < entity2_right);
 	}
 	
+	/**
+	 *  A very simple collision check for the y axis that doesn't pass around entities at all, just checks hitboxes.
+	 * @param	entity1_y		The first entity's y value.
+	 * @param	entity2_top		The top of the second entity's hitbox.
+	 * @param	entity2_bottom	The bottom of the second entity's hitbox.
+	 * @return	True if they're colliding on the y axis, false if they're not.
+	*/
 	static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool
 	{
 		return (entity1_y > entity2_top) && (entity1_y < entity2_bottom);
@@ -59,10 +73,5 @@ class HelperFunctions
 		offset.y = Math.sin(angle) * length;
 		
 		return offset;
-	}
-	
-	static public function CastToInt(value:Float):Int
-	{
-		return Std.int(value);
 	}
 }
