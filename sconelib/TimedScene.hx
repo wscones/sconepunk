@@ -2,7 +2,7 @@ package sconelib;
 
 import com.haxepunk.HXP;
 import com.haxepunk.Scene;
-import sconelib.utils.Time;
+import sconelib.time.Time;
 
 class TimedScene extends Scene
 {
