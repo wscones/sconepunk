@@ -11,7 +11,9 @@
 ### What does sconelib contain? ###
 
 * sconelib
-	* TimedScene 		- Wraps the logic for a basic fixed timestep. Just have your scenes extend this, and then override fixedUpdate!
+	* TimedScene 		- Wraps the logic for a basic fixed timestep. Just have your scenes extend this.
+	* TimedEntity		- If you have an entity and you want to have it do some logic every tick (rather than every frame), simply have it extend this and then override fixedUpdate.
+	* AngularMovement
 	
 	* sconelib.math
 		* SconeMath 	- Most notable for having basic float and point approximation functions.
