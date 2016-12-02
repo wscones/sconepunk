@@ -25,4 +25,4 @@
 
 ### Who am I? ###
 
-* I'm wednesday scones, and sometimes I make games
+* I'm wednesday scones
