@@ -3,8 +3,7 @@
 ### What is sconelib? ###
 
 * Sconelib is a simple collection of utility classes that I frequently use for HaxePunk development.
-* I've been wanting to collect them in a single library that I can collect them all in one spot so I
-* don't have to search for every file and copy them over every time I want to use them :)
+* I've been wanting to collect them in a single library that I can collect them all in one spot so I don't have to search for every file and copy them over every time I want to use them :)
 * 
 * Version 0.0.1
 
