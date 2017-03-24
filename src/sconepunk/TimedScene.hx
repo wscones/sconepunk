@@ -53,7 +53,7 @@ class TimedScene extends Scene
 	{
 		super.addUpdate(e);
 
-		if (Type.getClassName(Type.getSuperClass(Type.getClass(e))) == Type.getClassName(TimedEntity))
+		if (Std.is(e, TimedEntity))
 		{
 			_fixedUpdate.push(cast(e, TimedEntity));
 		}
@@ -63,7 +63,7 @@ class TimedScene extends Scene
 	{
 		super.removeUpdate(e);
 
-		if (Type.getClassName(Type.getSuperClass(Type.getClass(e))) == Type.getClassName(TimedEntity))
+		if (Std.is(e, TimedEntity))
 		{
 			_fixedUpdate.remove(cast(e, TimedEntity));
 		}
