@@ -4,9 +4,9 @@
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "classPath": "src/",
-    "releasenote": "Changed the name from sconelib to sconepunk.",
+    "releasenote": "Fixed type check for TimedEntity in TimedScene, and confirmed that getComponent is working.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
