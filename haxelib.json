@@ -1,0 +1,16 @@
+{
+    "name": "sconelib",
+    "url" : "https://bitbucket.org/wscones/sconelib/",
+    "license": "MIT",
+    "tags": ["scone", "haxepunk"],
+    "description": "A collection of utility classes for haxepunk development.",
+    "version": "0.0.1-alpha",
+    "classPath": "sconelib/",
+    "releasenote": "Initial release, mostly for testing.",
+    "contributors": "wednesday scones",
+    "dependencies": {
+        "haxepunk": "2.5.6",
+        "lime": "2.7.0",
+        "openfl": "3.6.1"
+    }
+}
