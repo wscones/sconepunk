@@ -1,15 +1,15 @@
 package sconepunk.components;
 
-import com.haxepunk.Entity;
+import sconepunk.entities.ComponentEntity;
 
 class Component
 {
     public var enabled:Bool;
-    public var entity:Entity;
+    public var entity:ComponentEntity;
 
 
 
-    public function new(entity:Entity):Void
+    public function new(entity:ComponentEntity):Void
     {
         this.entity = entity;
     }
