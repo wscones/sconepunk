@@ -30,6 +30,7 @@
 `import sconepunk.entities.*`
 
 **ComponentEntity:** The core of the bare-bones component system
+
 - addComponent(entity:ComponentEntity):Void
 - getComponent<T:Component>(class:Class<T>):T
 - getComponents<T:Component>(class:Class<T>):Array<T>
