@@ -2,22 +2,23 @@
 
 ### What is sconelib? ###
 
-* Sconelib is a simple collection of utility classes that I frequently use for HaxePunk development.
-* I've been wanting to collect them in a single library that I can collect them all in one spot so I don't have to search for every file and copy them over every time I want to use them :)
-* 
-* Version 0.0.1
+* Sconelib (current version 0.0.1-alpha) is a simple collection of utility classes that I frequently use
+* for HaxePunk development. Currently, it's very bare-bones and mostly for personal use, but I hope to add
+* more useful features that might benefit others :)
 
 ### What does sconelib contain? ###
 
 * sconelib
-	* TimedScene 		- Wraps the logic for a basic fixed timestep. Just have your scenes extend this.
-	* TimedEntity		- If you have an entity and you want to have it do some logic every tick (rather than every frame), simply have it extend this and then override fixedUpdate.
+	* TimedScene 		- An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate,
+	as well as the logic for calling fixedUpdate in any TimedEntities.
+	* TimedEntity		- An extension of Haxepunk's Entity class that adds a fixedUpdate function, which
+	is called on every tick, rather than every frame.
 	* AngularMovement
-	
+
 	* sconelib.math
 		* SconeMath 	- Most notable for having basic float and point approximation functions.
 	* sconelib.time
-		* Time 			- Sort of an emulation of Unity's Time class.
+		* Time 			- An attempt to emulate Unity's Time class.
 	* sconelib.utils
 		* Constants
 		* JoystickWrapper
