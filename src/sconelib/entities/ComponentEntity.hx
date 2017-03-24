@@ -1,5 +1,6 @@
 package sconelib.entities;
 
+import Type;
 import com.haxepunk.Entity;
 import sconelib.components.Component;
 
@@ -22,7 +23,7 @@ class ComponentEntity extends TimedEntity
 
 		for(i in 0..._components.length)
 		{
-			_components[i].onAdded();
+			_components[i].onStart();
 		}
 	}
 
@@ -41,17 +42,23 @@ class ComponentEntity extends TimedEntity
 
 
 
+	public function addComponent(component:Component):Void
+	{
+		component.onAdded();
+		_components.push(component);
+	}
+
 	/*
 	* Returns the first found component of type T if it exists, returns null if it doesn't.
 	*/
 	@:generic
-	public function getComponent<T:Component>():T
+	public function getComponent<T:Component>(classType:Class<T>):T
 	{
 		for (i in 0..._components.length)
 		{
-			if (Type.typeof(_components[i]) == T)
+			if (Std.is(_components[i], classType))
 			{
-				return _components[i];
+				return cast _components[i];
 			}
 		}
 
@@ -62,20 +69,20 @@ class ComponentEntity extends TimedEntity
 	* Returns an array containing all components of type T attached to this entity.
 	*/
 	@:generic
-	public function getComponents<T:Component>():Array<T>
+	public function getComponents<T:Component>(classType:Class<T>):Array<T>
 	{
 		var foundComponents:Array<T> = null;
 
 		for (i in 0..._components.length)
 		{
-			if (Type.typeof(_components[i]) == T)
+			if (Std.is(_components[i], classType))
 			{
 				if (foundComponents == null)
 				{
-					foundComponents = new Array<Component>();
+					foundComponents = new Array<T>();
 				}
 
-				foundComponents.push(_components[i]);
+				foundComponents.push(cast _components[i]);
 			}
 		}
 
