@@ -5,7 +5,7 @@
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
     "version": "0.0.1-alpha",
-    "classPath": "sconelib/",
+    "classPath": "src/",
     "releasenote": "Initial release, mostly for testing/personal use, currently.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
