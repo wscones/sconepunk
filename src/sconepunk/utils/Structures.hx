@@ -1,4 +1,4 @@
-package sconelib.utils;
+package sconepunk.utils;
 
 typedef Vector2D =
 {

@@ -1,4 +1,4 @@
-package sconelib.utils;
+package sconepunk.utils;
 
 import com.haxepunk.HXP;
 
@@ -9,7 +9,7 @@ class Directions
 	static public var UP:String = "up";
 	static public var DOWN:String = "down";
 	static public var NONE:String = "none";
-	
+
 	static public function getRandomDirection():String
 	{
 		return HXP.choose(LEFT, RIGHT, UP, DOWN, NONE);

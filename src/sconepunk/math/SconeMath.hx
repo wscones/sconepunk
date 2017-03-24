@@ -1,9 +1,9 @@
-package sconelib.math;
+package sconepunk.math;
 
 import com.haxepunk.HXP;
 import openfl.geom.Point;
 
-import sconelib.utils.Structures;
+import sconepunk.utils.Structures;
 
 class SconeMath
 {
@@ -18,7 +18,7 @@ class SconeMath
 	{
 		return (float1 > float2 - margin) && (float1 < float2 + margin);
 	}
-	
+
 	/**
 	 * Check if the elements in one point are approximately equal to the elements in another, by the desired margin.
 	 * @param	point1_x	X value of the first point.
@@ -32,7 +32,7 @@ class SconeMath
 	{
 		return (point1_x > point2_x - margin) && (point1_x < point2_x + margin) && (point1_y > point2_y - margin) && (point1_y < point2_y + margin);
 	}
-	
+
 	/**
 	 * A very simple collision check for the x axis that doesn't pass around entities at all, just checks hitboxes.
 	 * @param	entity1_x		The first entity's x value.
@@ -44,7 +44,7 @@ class SconeMath
 	{
 		return (entity1_x > entity2_left) && (entity1_x < entity2_right);
 	}
-	
+
 	/**
 	 *  A very simple collision check for the y axis that doesn't pass around entities at all, just checks hitboxes.
 	 * @param	entity1_y		The first entity's y value.
@@ -56,7 +56,7 @@ class SconeMath
 	{
 		return (entity1_y > entity2_top) && (entity1_y < entity2_bottom);
 	}
-	
+
 	/**
 	 * Just like HXP's angleXY function, but this just gives you the offset vector itself instead of directly applying it.
 	 * @param	angle		The angle of the vector, in degrees.
@@ -66,12 +66,12 @@ class SconeMath
 	static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D
 	{
 		var offset:Vector2D = { x:0, y:0 };
-		
+
 		angle *= (Math.PI / -180);
-		
+
 		offset.x = Math.cos(angle) * length;
 		offset.y = Math.sin(angle) * length;
-		
+
 		return offset;
 	}
 }

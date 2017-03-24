@@ -1,4 +1,4 @@
-package sconelib.time;
+package sconepunk.time;
 
 import com.haxepunk.HXP;
 

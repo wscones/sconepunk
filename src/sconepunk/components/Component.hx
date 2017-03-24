@@ -1,4 +1,4 @@
-package sconelib.components;
+package sconepunk.components;
 
 import com.haxepunk.Entity;
 

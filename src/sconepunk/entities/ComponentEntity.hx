@@ -1,8 +1,8 @@
-package sconelib.entities;
+package sconepunk.entities;
 
 import Type;
 import com.haxepunk.Entity;
-import sconelib.components.Component;
+import sconepunk.components.Component;
 
 class ComponentEntity extends TimedEntity
 {
