@@ -9,7 +9,7 @@
 
 
 
-## sconepunk ##
+#### sconepunk ####
 
 `import sconepunk.*`
 
@@ -18,21 +18,21 @@
 **TimedEntity:** An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
 
 
-## sconepunk.math ##
+#### sconepunk.math ####
 
 `import sconepunk.math.*`
 
 **SconeMath:** Most notable for having basic float and point approximation functions
 
 
-## sconepunk.time ##
+#### sconepunk.time ####
 
 `import sconepunk.time.*`
 
 **Time:** An attempt to emulate Unity's Time class
 
 
-## sconepunk.utils ##
+#### sconepunk.utils ####
 
 `import sconepunk.utils.*`
 

@@ -1,12 +1,12 @@
 {
     "name": "sconepunk",
-    "url" : "https://bitbucket.org/wscones/sconelib/",
+    "url" : "https://bitbucket.org/wscones/sconepunk/",
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
     "version": "0.0.2",
     "classPath": "src/",
-    "releasenote": "Updated the name.",
+    "releasenote": "Changed the name from sconelib to sconepunk.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
