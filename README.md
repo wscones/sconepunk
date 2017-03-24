@@ -7,19 +7,21 @@
 
 ### What does sconelib contain? ###
 
-- sconelib
-	- TimedScene: An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities.
-	- TimedEntity: An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame.
-	- AngularMovement
-	- sconelib.math
-		- SconeMath: Most notable for having basic float and point approximation functions.
-	- sconelib.time
-		- Time: An attempt to emulate Unity's Time class.
-	- sconelib.utils
-		- Constants
-		- JoystickWrapper
-		- Structures
-		- Types
+- 	sconelib
+	- 	TimedScene: An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the
+		logic for calling fixedUpdate in any TimedEntities
+	- 	TimedEntity: An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every
+		tick, rather than every frame
+	- 	AngularMovement
+	- 	sconelib\.math
+		- 	SconeMath: Most notable for having basic float and point approximation functions
+	- 	sconelib\.time
+		- 	Time: An attempt to emulate Unity's Time class
+	- 	sconelib\.utils
+		- 	Constants
+		- 	JoystickWrapper
+		- 	Structures
+		- 	Types
 
 ### Who am I? ###
 
