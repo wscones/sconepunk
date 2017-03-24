@@ -4,9 +4,9 @@
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
-    "version": "0.0.1-alpha.3",
+    "version": "0.0.2",
     "classPath": "src/",
-    "releasenote": "Hopefully made the component system functional. Going to test it now.",
+    "releasenote": "Finally got the component system up-and-running!",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
