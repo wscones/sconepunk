@@ -3,8 +3,9 @@
 ### What is sconelib? ###
 
 * Sconelib (current version 0.0.1-alpha) is a simple collection of utility classes that I frequently use
-* for HaxePunk development. Currently, it's very bare-bones and mostly for personal use, but I hope to add
-* more useful features that might benefit others :)
+for HaxePunk development.
+* Currently, it's very bare-bones and mostly for personal use, but I hope to add
+more useful features that might benefit others :)
 
 ### What does sconelib contain? ###
 

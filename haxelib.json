@@ -6,8 +6,8 @@
     "description": "A collection of utility classes for haxepunk development.",
     "version": "0.0.1-alpha",
     "classPath": "sconelib/",
-    "releasenote": "Initial release, mostly for testing.",
-    "contributors": "wednesday scones",
+    "releasenote": "Initial release, mostly for testing/personal use, currently.",
+    "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
         "lime": "2.7.0",
