@@ -8,58 +8,61 @@ import sconelib.time.Time;
 class TimedScene extends Scene
 {
 	private var _fixedUpdate:Array<TimedEntity>;
-	
+
 	public override function new()
 	{
 		super();
-		
+
 		_fixedUpdate = new Array<TimedEntity>();
-		
+
+		Time.deltaTime = 0.0;
 		Time.time = 0.0;
+		Time.fixedTime = 0.0;
 	}
-	
+
 	public override function begin()
 	{
-		Time.time = 0.0;
+		Time.deltaTime = 0.0;
 	}
-	
+
 	public override function update()
 	{
+		Time.deltaTime += HXP.elapsed;
 		Time.time += HXP.elapsed;
-		
-		if (Time.time >= 1.0)
+
+		if (Time.deltaTime >= 1.0)
 		{
 			fixedUpdate();
-			
-			Time.increment();
-			Time.time--;
+
+			Time.fixedTime += 1.0;
+			Time.deltaTime--;
 		}
-		
+
 		super.update();
 	}
-	
+
 	public function fixedUpdate()
 	{
-		for (i in 0..._fixedUpdate.length) 
+		for (i in 0..._fixedUpdate.length)
 		{
 			_fixedUpdate[i].fixedUpdate();
 		}
 	}
-	
+
 	private override function addUpdate(e:Entity)
 	{
 		super.addUpdate(e);
-		
+
 		if (Type.getClassName(Type.getSuperClass(Type.getClass(e))) == Type.getClassName(TimedEntity))
 		{
 			_fixedUpdate.push(cast(e, TimedEntity));
 		}
 	}
-	
+
 	private override function removeUpdate(e:Entity)
 	{
 		super.removeUpdate(e);
-		
+
 		if (Type.getClassName(Type.getSuperClass(Type.getClass(e))) == Type.getClassName(TimedEntity))
 		{
 			_fixedUpdate.remove(cast(e, TimedEntity));

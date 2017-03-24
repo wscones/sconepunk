@@ -2,28 +2,25 @@ package sconelib.time;
 
 import com.haxepunk.HXP;
 
-class Time 
+class Time
 {
 	/**
-	 * Time since the last tick.
+	 * Time since the last tick (in seconds).
+	 */
+	public static var deltaTime:Float = 0.0;
+
+	/**
+	 * The tick interval (in seconds).
+	 */
+	public static var fixedDeltaTime:Float = 1.0;
+
+	/**
+	 * Total time since the game began (in seconds). Updated every frame.
 	 */
 	public static var time:Float = 0.0;
-	
+
 	/**
-	 * How much the totalTime should be incremented every tick (in this case, 1 second).
+	 * Total time since the game began (in seconds). Updated every tick.
 	 */
-	public static var incrementAmount:Float = 1.0;
-	
-	/**
-	 * Total time since the game began (in seconds).
-	 */
-	public static var totalTime:Float = 0.0;
-	
-	/**
-	 * Increment the totalTime by the incrementAmount.
-	 */
-	public static function increment()
-	{
-		totalTime += incrementAmount;
-	}
+	public static var fixedTime:Float = 0.0;
 }
