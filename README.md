@@ -8,10 +8,18 @@
 ## What does sconepunk contain? ##
 
 
+### packages ###
+
+``` sconepunk
+    sconepunk.components
+    sconepunk.entities
+    sconepunk.math
+    sconepunk.time
+    sconepunk.utils
+```
+
 
 ### sconepunk ###
-
-`import sconepunk.*`
 
 **TimedScene:** An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities
 
@@ -20,39 +28,37 @@
 
 ### sconepunk.components ###
 
-`import sconepunk.components.*`
-
 **Component:** Base class for all components. Extend this to create components
 
 
 ### sconepunk.entities ###
 
-`import sconepunk.entities.*`
-
 **ComponentEntity:** The core of the bare-bones component system
 
-- addComponent(entity:ComponentEntity):Void
-- getComponent<T:Component>(class:Class<T>):T
-- getComponents<T:Component>(class:Class<T>):Array<T>
+`public function addComponent(entity:ComponentEntity):Void`
+`public function getComponent<T:Component>(class:Class<T>):T`
+`public function getComponents<T:Component>(class:Class<T>):Array<T>``
 
 
 ### sconepunk.math ###
 
-`import sconepunk.math.*`
+**SconeMath**
 
-**SconeMath:** Most notable for having basic float and point approximation functions
-
+``` static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool
+    static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool
+    static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool
+    static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool
+    static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D
+```
 
 ### sconepunk.time ###
-
-`import sconepunk.time.*`
 
 **Time:** An attempt to emulate Unity's Time class
 
 
 ### sconepunk.utils ###
 
-`import sconepunk.utils.*`
+Random in-progress stuff mostly
 
 **Constants**
 
