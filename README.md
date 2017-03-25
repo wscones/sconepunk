@@ -10,29 +10,33 @@
 
 ### packages ###
 
-> sconepunk
-> sconepunk.components
-> sconepunk.entities
-> sconepunk.math
-> sconepunk.time
-> sconepunk.utils
+`sconepunk`
+`sconepunk.components`
+`sconepunk.entities`
+`sconepunk.math`
+`sconepunk.time`
+`sconepunk.utils`
 
 
 ### sconepunk ###
 
-**TimedScene:** An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities
+#### TimedScene ####
+An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities
 
-**TimedEntity:** An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
+#### TimedEntity ####
+An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
 
 
 ### sconepunk.components ###
 
-**Component:** Base class for all components. Extend this to create components
+#### Component ####
+Base class for all components. Extend this to create components
 
 
 ### sconepunk.entities ###
 
-**ComponentEntity:** The core of the bare-bones component system
+#### ComponentEntity ####
+The core of the bare-bones component system
 
 `public function addComponent(entity:ComponentEntity):Void`
 `public function getComponent<T:Component>(class:Class<T>):T`
@@ -41,7 +45,7 @@
 
 ### sconepunk.math ###
 
-**SconeMath**
+#### SconeMath ####
 
 `static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool`
 `static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool`
@@ -52,17 +56,17 @@
 
 ### sconepunk.time ###
 
-**Time:** An attempt to emulate Unity's Time class
+#### Time #### An attempt to emulate Unity's Time class
 
 
 ### sconepunk.utils ###
 
 Random in-progress stuff mostly
 
-**Constants**
+#### Constants ####
 
-**JoystickWrapper**
+#### JoystickWrapper ####
 
-**Structures**
+#### Structures ####
 
-**Types**
+#### Types ####
