@@ -2,7 +2,7 @@
 
 ## What is sconepunk? ##
 
-- sconepunk (current version 0.0.2) is a simple collection of utility classes that I frequently use for HaxePunk development.
+- sconepunk (current version 0.0.3) is a simple collection of utility classes that I frequently use for HaxePunk development.
 - Currently, it's very bare-bones and mostly for personal use, but I hope to add more useful features that might benefit others :)
 
 ## What does sconepunk contain? ##
@@ -37,19 +37,19 @@
 
 `public function addComponent(entity:ComponentEntity):Void`
 `public function getComponent<T:Component>(class:Class<T>):T`
-`public function getComponents<T:Component>(class:Class<T>):Array<T>``
+`public function getComponents<T:Component>(class:Class<T>):Array<T>`
 
 
 ### sconepunk.math ###
 
 **SconeMath**
 
-``` static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool
-    static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool
-    static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool
-    static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool
-    static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D
-```
+`static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool`
+`static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool`
+`static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool`
+`static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool`
+`static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D`
+
 
 ### sconepunk.time ###
 
