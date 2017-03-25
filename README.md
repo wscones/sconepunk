@@ -13,17 +13,12 @@
 
 ### packages ###
 
-`sconepunk`
-
-`sconepunk.components`
-
-`sconepunk.entities`
-
-`sconepunk.math`
-
-`sconepunk.time`
-
-`sconepunk.utils`
+    sconepunk
+    sconepunk.components
+    sconepunk.entities
+    sconepunk.math
+    sconepunk.time
+    sconepunk.utils
 
 
 
@@ -64,11 +59,11 @@ How to use:
 
 #### SconeMath ####
 
-`static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool`
-`static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool`
-`static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool`
-`static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool`
-`static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D`
+    static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool
+    static public function ApproxPoint(point1_x:Float, point1_y:Float, point2_x:Float, point2_y:Float, margin:Float):Bool
+    static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool
+    static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool
+    static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D
 
 
 
