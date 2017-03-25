@@ -1,9 +1,12 @@
 # README #
 
+
 ## What is sconepunk? ##
 
 - sconepunk (current version 0.0.3) is a simple collection of utility classes that I frequently use for HaxePunk development.
 - Currently, it's very bare-bones and mostly for personal use, but I hope to add more useful features that might benefit others :)
+
+
 
 ## What does sconepunk contain? ##
 
@@ -11,14 +14,20 @@
 ### packages ###
 
 `sconepunk`
+
 `sconepunk.components`
+
 `sconepunk.entities`
+
 `sconepunk.math`
+
 `sconepunk.time`
+
 `sconepunk.utils`
 
 
-### sconepunk ###
+
+### **sconepunk** ###
 
 #### TimedScene ####
 An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities
@@ -27,13 +36,15 @@ An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate
 An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
 
 
-### sconepunk.components ###
+
+### **sconepunk.components** ###
 
 #### Component ####
 Base class for all components. Extend this to create components
 
 
-### sconepunk.entities ###
+
+### **sconepunk.entities** ###
 
 #### ComponentEntity ####
 The core of the bare-bones component system
@@ -43,7 +54,8 @@ The core of the bare-bones component system
 `public function getComponents<T:Component>(class:Class<T>):Array<T>`
 
 
-### sconepunk.math ###
+
+### **sconepunk.math** ###
 
 #### SconeMath ####
 
@@ -54,12 +66,15 @@ The core of the bare-bones component system
 `static public function GetAngleOffset(angle:Float, length:Float = 1):Vector2D`
 
 
-### sconepunk.time ###
 
-#### Time #### An attempt to emulate Unity's Time class
+### **sconepunk.time** ###
+
+#### Time ####
+An attempt to emulate Unity's Time class
 
 
-### sconepunk.utils ###
+
+### **sconepunk.utils** ###
 
 Random in-progress stuff mostly
 
