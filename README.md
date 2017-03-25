@@ -10,13 +10,12 @@
 
 ### packages ###
 
-``` sconepunk
-    sconepunk.components
-    sconepunk.entities
-    sconepunk.math
-    sconepunk.time
-    sconepunk.utils
-```
+> sconepunk
+> sconepunk.components
+> sconepunk.entities
+> sconepunk.math
+> sconepunk.time
+> sconepunk.utils
 
 
 ### sconepunk ###
