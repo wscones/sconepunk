@@ -49,9 +49,14 @@ Base class for all components. Extend this to create components
 #### ComponentEntity ####
 The core of the bare-bones component system
 
-`public function addComponent(entity:ComponentEntity):Void`
-`public function getComponent<T:Component>(class:Class<T>):T`
-`public function getComponents<T:Component>(class:Class<T>):Array<T>`
+How to use:
+
+    // adding a component
+    ComponentEntity player = new ComponentEntity();
+    player.addComponent(new MovementComponent(player));
+
+    // accessing a component
+    player.getComponent(MovementComponent).enabled = false;
 
 
 
