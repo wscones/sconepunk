@@ -3,7 +3,7 @@
 
 ## What is sconepunk? ##
 
-- sconepunk (current version 0.0.3) is a simple collection of utility classes that I frequently use for HaxePunk development.
+- sconepunk (current version 0.0.4) is a simple collection of utility classes that I frequently use for HaxePunk development.
 - Currently, it's very bare-bones and mostly for personal use, but I hope to add more useful features that might benefit others :)
 
 
@@ -16,6 +16,7 @@
     sconepunk
     sconepunk.components
     sconepunk.entities
+    sconepunk.events
     sconepunk.math
     sconepunk.time
     sconepunk.utils
@@ -35,14 +36,23 @@ An extension of Haxepunk's Entity class that adds a fixedUpdate function, which 
 ### **sconepunk.components** ###
 
 #### Component ####
-Base class for all components. Extend this to create components
+Base class for all components. Extend this to create components;
+Contains a reference to its parent entity
+
+How to use:
+
+    // reference another component on the same entity
+    entity.getComponent(OtherComponentType).doSomething();
+
+    // broadcast an event
+    entity.broadcastEvent(new TestEvent(TestEvent.TEST));
 
 
 
 ### **sconepunk.entities** ###
 
 #### ComponentEntity ####
-The core of the bare-bones component system
+The core of the bare-bones component system;
 
 How to use:
 
@@ -52,6 +62,14 @@ How to use:
 
     // accessing a component
     player.getComponent(MovementComponent).enabled = false;
+
+
+
+### **sconepunk.entities** ###
+
+#### EventManager ####
+A simple static class used for broadcasting events to components (using openFL Events + EventDispatchers);
+Used internally within ComponentEntity
 
 
 
