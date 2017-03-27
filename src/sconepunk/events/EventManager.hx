@@ -41,7 +41,6 @@ class EventManager
         if (_instance == null)
         {
             _instance = new EventManager();
-            //_instance.init();
         }
 
         return _instance;

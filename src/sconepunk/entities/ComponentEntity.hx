@@ -47,9 +47,9 @@ class ComponentEntity extends TimedEntity
 
 
 	/*
-	** Broadcasts an event to all of this entity's components.
+	** Broadcasts an event to this entity's components.
 	*/
-	public function invokeEvent(event:Event):Void
+	public function broadcastEventLocal(event:Event):Void
 	{
 		for(i in 0..._components.length)
 		{
@@ -63,7 +63,7 @@ class ComponentEntity extends TimedEntity
 	/*
 	** Broadcasts an event every component in the scene.
 	*/
-	public function broadcastEvent(event:Event):Void
+	public function broadcastEventGlobal(event:Event):Void
 	{
 		EventManager.instance.broadcastEvent(event);
 	}
