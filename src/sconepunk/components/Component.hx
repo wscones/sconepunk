@@ -4,6 +4,7 @@ import openfl.events.EventDispatcher;
 
 import sconepunk.entities.ComponentEntity;
 
+
 class Component extends EventDispatcher
 {
     public var enabled:Bool;

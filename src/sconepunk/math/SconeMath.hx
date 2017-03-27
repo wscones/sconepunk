@@ -5,6 +5,7 @@ import openfl.geom.Point;
 
 import sconepunk.utils.Structures;
 
+
 class SconeMath
 {
 	/**

@@ -2,7 +2,10 @@ package sconepunk.entities;
 
 import Type;
 import com.haxepunk.Entity;
+import openfl.events.Event;
+
 import sconepunk.components.Component;
+
 
 class ComponentEntity extends TimedEntity
 {
@@ -42,6 +45,22 @@ class ComponentEntity extends TimedEntity
 
 
 
+	/*
+	** Broadcasts an event to all of this entity's components.
+	*/
+	public function invokeEvent(event:Event):Void
+	{
+		for(i in 0..._components.length)
+		{
+			if (_components[i].enabled)
+			{
+				_components[i].dispatchEvent(event);
+			}
+		}
+	}
+
+
+
 	public function addComponent(component:Component):Void
 	{
 		component.onAdded();
@@ -49,7 +68,7 @@ class ComponentEntity extends TimedEntity
 	}
 
 	/*
-	* Returns the first found component of type T if it exists, returns null if it doesn't.
+	** Returns the first found component of type T if it exists, returns null if it doesn't.
 	*/
 	@:generic
 	public function getComponent<T:Component>(classType:Class<T>):T
@@ -66,7 +85,7 @@ class ComponentEntity extends TimedEntity
 	}
 
 	/*
-	* Returns an array containing all components of type T attached to this entity.
+	** Returns an array containing all components of type T attached to this entity.
 	*/
 	@:generic
 	public function getComponents<T:Component>(classType:Class<T>):Array<T>

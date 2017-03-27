@@ -2,6 +2,7 @@ package sconepunk.time;
 
 import com.haxepunk.HXP;
 
+
 class Time
 {
 	/**

@@ -2,6 +2,7 @@ package sconepunk.utils;
 
 import com.haxepunk.HXP;
 
+
 class Directions
 {
 	static public var LEFT:String = "left";
