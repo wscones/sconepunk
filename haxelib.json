@@ -6,7 +6,7 @@
     "description": "A collection of utility classes for HaxePunk development.",
     "version": "0.0.4",
     "classPath": "src/",
-    "releasenote": "Basic event system is now up-and-running.",
+    "releasenote": "Added a very basic event system.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
