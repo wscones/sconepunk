@@ -61,7 +61,7 @@ class ComponentEntity extends TimedEntity
 	}
 
 	/*
-	** Broadcasts an event every component in the scene.
+	** Broadcasts an event to every component in the scene.
 	*/
 	public function broadcastEventGlobal(event:Event):Void
 	{
