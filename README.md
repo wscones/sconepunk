@@ -29,7 +29,7 @@
 An extension of HaxePunk's Scene class that adds functionality for a fixedUpdate, as well as the logic for calling fixedUpdate in any TimedEntities
 
 #### TimedEntity ####
-An extension of Haxepunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
+An extension of HaxePunk's Entity class that adds a fixedUpdate function, which is called on every tick, rather than every frame
 
 
 
