@@ -4,9 +4,9 @@
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "classPath": "src/",
-    "releasenote": "Fixed type check for TimedEntity in TimedScene, and confirmed that getComponent is working.",
+    "releasenote": "Basic event system is now up-and-running.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "2.5.6",
