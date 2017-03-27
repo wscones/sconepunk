@@ -5,6 +5,7 @@ import com.haxepunk.Entity;
 import openfl.events.Event;
 
 import sconepunk.components.Component;
+import sconepunk.events.EventManager;
 
 
 class ComponentEntity extends TimedEntity
@@ -59,12 +60,21 @@ class ComponentEntity extends TimedEntity
 		}
 	}
 
+	/*
+	** Broadcasts an event every component in the scene.
+	*/
+	public function broadcastEvent(event:Event):Void
+	{
+		EventManager.instance.broadcastEvent(event);
+	}
+
 
 
 	public function addComponent(component:Component):Void
 	{
 		component.onAdded();
 		_components.push(component);
+		EventManager.instance.registerComponent(component);
 	}
 
 	/*
