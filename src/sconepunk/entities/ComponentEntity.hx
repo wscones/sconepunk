@@ -70,6 +70,9 @@ class ComponentEntity extends TimedEntity
 
 
 
+	/**
+	* Adds a component to the netity and registers it with the EventManager.
+	*/
 	public function addComponent(component:Component):Void
 	{
 		component.onAdded();
@@ -77,8 +80,8 @@ class ComponentEntity extends TimedEntity
 		EventManager.instance.registerComponent(component);
 	}
 
-	/*
-	** Returns the first found component of type T if it exists, returns null if it doesn't.
+	/**
+	* Returns the first found component of type T if it exists, returns null if it doesn't.
 	*/
 	@:generic
 	public function getComponent<T:Component>(classType:Class<T>):T
@@ -94,8 +97,8 @@ class ComponentEntity extends TimedEntity
 		return null;
 	}
 
-	/*
-	** Returns an array containing all components of type T attached to this entity.
+	/**
+	* Returns an array containing all components of type T attached to this entity.
 	*/
 	@:generic
 	public function getComponents<T:Component>(classType:Class<T>):Array<T>
