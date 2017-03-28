@@ -36,8 +36,7 @@ An extension of HaxePunk's Entity class that adds a fixedUpdate function, which 
 ### **sconepunk.components** ###
 
 #### Component ####
-Base class for all components. Extend this to create components;
-Contains a reference to its parent entity
+Base class for all components. Extend this to create components; Contains a reference to its parent entity
 
 How to use:
 
@@ -68,7 +67,7 @@ How to use:
 ### **sconepunk.entities** ###
 
 #### EventManager ####
-A simple static class used for broadcasting events to components (using openFL Events + EventDispatchers);
+A simple singleton used for broadcasting events to components (using openFL Events + EventDispatchers);
 Used internally within ComponentEntity
 
 
