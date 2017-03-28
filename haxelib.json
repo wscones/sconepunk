@@ -1,6 +1,6 @@
 {
     "name": "sconepunk",
-    "url" : "https://bitbucket.org/wscones/sconepunk/",
+    "url" : "https://github.com/wscones/sconepunk",
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
