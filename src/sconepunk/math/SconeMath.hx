@@ -14,7 +14,7 @@ class SconeMath
 	 * @param	float2		The second float value.
 	 * @param	margin		Margin of how close the floats need to be to be considered "approximately equal."
 	 * @return	True if they're approximately equal, false if not.
-	*/
+	 */
 	static public function ApproxFloat(float1:Float, float2:Float, margin:Float):Bool
 	{
 		return (float1 > float2 - margin) && (float1 < float2 + margin);
@@ -40,7 +40,7 @@ class SconeMath
 	 * @param	entity2_left	The leftmost position of the second entity's hitbox.
 	 * @param	entity2_right	The rightmost position of the second entity's hitbox.
 	 * @return	True if they're colliding on the x axis, false if they're not.
-	*/
+	 */
 	static public function CollideX(entity1_x:Float, entity2_left:Float, entity2_right:Float):Bool
 	{
 		return (entity1_x > entity2_left) && (entity1_x < entity2_right);
@@ -52,7 +52,7 @@ class SconeMath
 	 * @param	entity2_top		The top of the second entity's hitbox.
 	 * @param	entity2_bottom	The bottom of the second entity's hitbox.
 	 * @return	True if they're colliding on the y axis, false if they're not.
-	*/
+	 */
 	static public function CollideY(entity1_y:Float, entity2_top:Float, entity2_bottom:Float):Bool
 	{
 		return (entity1_y > entity2_top) && (entity1_y < entity2_bottom);

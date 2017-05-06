@@ -46,9 +46,9 @@ class ComponentEntity extends TimedEntity
 
 
 
-	/*
-	** Broadcasts an event to this entity's components.
-	*/
+	/**
+	 * Broadcasts an event to this entity's components.
+	 */
 	public function broadcastEventLocal(event:Event):Void
 	{
 		for(i in 0..._components.length)
@@ -60,9 +60,9 @@ class ComponentEntity extends TimedEntity
 		}
 	}
 
-	/*
-	** Broadcasts an event to every component in the scene.
-	*/
+	/**
+	 * Broadcasts an event to every component in the scene.
+	 */
 	public function broadcastEventGlobal(event:Event):Void
 	{
 		EventManager.instance.broadcastEvent(event);
@@ -71,8 +71,8 @@ class ComponentEntity extends TimedEntity
 
 
 	/**
-	* Adds a component to the netity and registers it with the EventManager.
-	*/
+	 * Adds a component to the entity and registers it with the EventManager.
+	 */
 	public function addComponent(component:Component):Void
 	{
 		component.onAdded();
@@ -98,8 +98,8 @@ class ComponentEntity extends TimedEntity
 	}
 
 	/**
-	* Returns an array containing all components of type T attached to this entity.
-	*/
+	 * Returns an array containing all components of type T attached to this entity.
+	 */
 	@:generic
 	public function getComponents<T:Component>(classType:Class<T>):Array<T>
 	{
