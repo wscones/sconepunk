@@ -1,6 +1,6 @@
 package sconepunk;
 
-import com.haxepunk.Entity;
+import haxepunk.Entity;
 
 class TimedEntity extends Entity
 {

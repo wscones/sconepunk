@@ -9,8 +9,8 @@
     "releasenote": "Added a very basic event system.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
-        "haxepunk": "2.5.6",
-        "lime": "2.7.0",
-        "openfl": "3.6.1"
+        "haxepunk": "4.0.1",
+        "lime": "6.2.0",
+        "openfl": "7.1.2"
     }
 }

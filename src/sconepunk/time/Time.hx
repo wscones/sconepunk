@@ -1,6 +1,6 @@
 package sconepunk.time;
 
-import com.haxepunk.HXP;
+import haxepunk.HXP;
 
 
 class Time

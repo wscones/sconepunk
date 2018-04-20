@@ -1,8 +1,8 @@
 package sconepunk;
 
-import com.haxepunk.Entity;
-import com.haxepunk.HXP;
-import com.haxepunk.Scene;
+import haxepunk.Entity;
+import haxepunk.HXP;
+import haxepunk.Scene;
 import sconepunk.time.Time;
 
 class TimedScene extends Scene

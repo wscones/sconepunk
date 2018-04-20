@@ -1,6 +1,6 @@
 package sconepunk.math;
 
-import com.haxepunk.HXP;
+import haxepunk.HXP;
 import openfl.geom.Point;
 
 import sconepunk.utils.Structures;

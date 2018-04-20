@@ -1,7 +1,7 @@
 package sconepunk.entities;
 
 import Type;
-import com.haxepunk.Entity;
+import haxepunk.Entity;
 import openfl.events.Event;
 
 import sconepunk.components.Component;

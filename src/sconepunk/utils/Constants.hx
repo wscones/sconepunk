@@ -1,6 +1,6 @@
 package sconepunk.utils;
 
-import com.haxepunk.HXP;
+import haxepunk.HXP;
 
 
 class Directions

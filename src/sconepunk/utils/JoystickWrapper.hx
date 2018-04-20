@@ -1,6 +1,6 @@
 package sconepunk.utils;
 
-import com.haxepunk.utils.Input;
+import haxepunk.input.Input;
 
 
 class JoystickWrapper
