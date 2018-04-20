@@ -3,7 +3,7 @@
 
 ## What is sconepunk? ##
 
-- sconepunk (current version 0.0.4) is a simple collection of utility classes that I frequently use for HaxePunk development.
+- sconepunk (current version 0.0.5) is a simple collection of utility classes that I frequently use for HaxePunk development.
 - Currently, it's very bare-bones and mostly for personal use, but I hope to add more useful features that might benefit others :)
 
 

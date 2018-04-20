@@ -4,9 +4,9 @@
     "license": "MIT",
     "tags": ["scone", "haxepunk"],
     "description": "A collection of utility classes for HaxePunk development.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "classPath": "src/",
-    "releasenote": "Added a very basic event system.",
+    "releasenote": "Migrated to the latest version of HaxePunk.",
     "contributors": ["wednesdayscones"],
     "dependencies": {
         "haxepunk": "4.0.1",
